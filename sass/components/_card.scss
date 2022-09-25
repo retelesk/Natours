@@ -1,7 +1,7 @@
 .card {
   //FUNCTIONALITY
-  perspective: 150rem;
   -moz-perspective: 150rem;
+  perspective: 150rem;
   position: relative;
   height: 52rem;
 
@@ -12,6 +12,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
