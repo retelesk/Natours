@@ -4,6 +4,15 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-por) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include respond(tab-por) {
+    max-width: 50rem;
+    padding: 0 3rem;
   }
 
   @include clearfix();
@@ -11,6 +20,10 @@
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+      margin-bottom: $gutter-vertical-small;
+    }
+    @include respond(tab-por) {
+      width: 100% !important;
     }
   }
   .col-1-of-2 {
